@@ -1,0 +1,13 @@
+:root {
+    --link_color: blue;
+    --link_color_hover: purple;
+}
+
+a {
+    color: var(--link_color);
+}
+
+a:hover {
+    color: var(--link_color_hover);
+    text-decoration: none;
+}

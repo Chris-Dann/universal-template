@@ -1,0 +1,70 @@
+@import "typography.css";
+@import "links_and_buttons.css";
+@import "menus.css";
+@import "sidebar.css";
+@import "header.css";
+@import "footer.css";
+@import "blog.css";
+
+
+/* remove padding on site header */
+.site-header {
+    padding: 0;
+}
+
+/* remove the WordPress edit link for admins */
+.edit-link { 
+    display: none; 
+}
+
+/* remove the bottom margin on pages */
+.post, .page {
+    margin: 0;
+}
+
+/* make input fields 100% width */
+input[type="text"], 
+input[type="email"], 
+input[type="url"], 
+input[type="password"], 
+input[type="search"], 
+input[type="number"], 
+input[type="tel"], 
+input[type="range"], 
+input[type="date"], 
+input[type="month"], 
+input[type="week"], 
+input[type="time"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="color"], 
+textarea,
+label {
+    width: 100%;
+}
+
+/* template id for development */
+p.template_id {
+    color: lightgrey;
+    font-size: 0.8em;
+}
+
+/* responsive Google Map */
+.dano_responsive_google_map {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.dano_responsive_google_map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#content {
+    padding: 3rem 0;
+}

@@ -1,0 +1,33 @@
+:root {
+    --footer-background-color: darkgrey;
+    --footer-text-color: black;
+    --footer-vertical-padding: 2rem;
+    --footer-font-size: .8rem;
+
+    --footer-links-color: black;
+    --footer-links-hover: red;
+}
+
+.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: var(--footer-vertical-padding) 0;
+    font-size: var(--footer-font-size);
+}
+
+/* STYLING FOR ANY MENUS IN THE FOOTER */
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer ul li a {
+    color: var(--footer-links-color);
+    font-size: var(--footer-font-size);
+}
+
+.footer ul li a:hover {
+    color: var(--footer-links-hover);
+}

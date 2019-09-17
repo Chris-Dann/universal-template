@@ -1,0 +1,122 @@
+:root {
+    --main_menu_background_color: rgb(57, 54, 59);
+    --main_menu_links_color: white;
+    --main_menu_links_color_hover: red;
+
+    --hamburger_size: 2rem;
+    --hamburger_color: white;
+    --close_button_color: red;
+
+    --hamburger_menu_background: rgba( 0, 0, 0, 0.9);
+    --hamburger_menu_links_color: white;
+    --hamburger_menu_links_hover: red;
+    --hamburger_menu_separators: grey;
+}
+
+/*****************************************
+* MAIN MENU
+******************************************/
+
+.ut_main_menu {
+    background-color: var(--main_menu_background_color);
+    display: none;
+    padding: .6em 0;
+}
+
+.ut_main_menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.ut_main_menu li {
+    margin-right: 2em;
+}
+
+.ut_main_menu ul li a {
+    color: var(--main_menu_links_color);
+}
+
+.ut_main_menu ul li a:hover {
+    color: var(--main_menu_links_color_hover);
+}
+
+
+/*****************************************
+* HAMBURGER MENU
+******************************************/
+
+/* HAMBURGER ICON */
+
+.ut_hamburger_menu_hamburger,
+.ut_hamburger_menu_menu__close_button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.ut_hamburger_menu_hamburger__icon,
+.ut_hamburger_menu_menu__close_button--icon {
+    font-size: var(--hamburger_size);
+}
+
+.ut_hamburger_menu_hamburger__icon {
+    color: var(--hamburger_color);
+}
+
+.ut_hamburger_menu_menu__close_button--icon {
+    color: var(--close_button_color);
+}
+
+.ut_hamburger_menu_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hamburger_menu_background);
+    z-index: 100;
+    display: none;
+}
+
+.ut_hamburger_menu_menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.ut_hamburger_menu_menu ul li {
+    padding: 1em 2em;
+}
+
+.ut_hamburger_menu_menu ul li:not(:last-child) {
+    border-bottom: 1px solid var(--hamburger_menu_separators);
+}
+
+.ut_hamburger_menu_menu ul li a {
+    color: var(--hamburger_menu_links_color);
+}
+
+.ut_hamburger_menu_menu ul li a:hover {
+    color: var(--hamburger_menu_links_hover);
+}
+
+/***************************************** 
+* BREAKPOINT FROM MOBILE TO DESKTOP MENU 
+******************************************/
+
+@media only screen and (min-width: 768px) {
+    .ut_hamburger_menu {
+        display: none;
+    }
+
+    .ut_main_menu {
+        display: block;
+    }
+}

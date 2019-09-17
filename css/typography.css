@@ -1,0 +1,10 @@
+/* DEFAULT FONT FAMILY */
+body {
+    font-family: 'Raleway';
+}
+
+/* FOR PAGE HEADERS FROM WORDPRESS */
+.entry-header {
+    text-align: center;
+    margin-top: 2rem;
+}

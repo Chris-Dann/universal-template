@@ -1,0 +1,29 @@
+/* .dano_blog_post_summary - controls styling of blog summaries on index.php */
+
+.dano_blog_post_summary {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+    border-bottom: 1px solid grey;
+}
+.dano_blog_post_summary:first-of-type {
+    padding-top: 0;
+}
+
+.dano_blog_post_summary__thumbnail {
+    flex-shrink: 0;
+}
+
+.dano_blog_post_summary__thumbnail img {
+    margin-right: 20px;
+}
+
+.dano_blog_post_summary__details {
+    margin-right: auto;
+}
+
+/* center image on blog posts and add a top margin */
+.wp-post-image {
+    display: block;
+    margin: 1rem auto 0px auto;
+}

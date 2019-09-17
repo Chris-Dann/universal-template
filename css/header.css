@@ -1,0 +1,35 @@
+.ut_header {
+    min-height: 150px;
+    background-image: url(../images/header-image.jpg);
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.ut_header .container {
+    position: relative;
+}
+
+h1.site-title a {
+    color: whitesmoke;
+}
+
+h2.site-description {
+    color: lightgoldenrodyellow;
+}
+
+.ut_social_media_header_icons {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .ut_social_media_header_icons {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
